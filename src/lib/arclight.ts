@@ -392,6 +392,9 @@ export interface ResilienceAction {
   title: string;
   detail: string;
   difficulty: "Easy" | "Medium" | "High";
+  impact: "Low" | "Medium" | "High";
+  scoreIncrease: number;
+  rationale: string;
   apply: (eco: Ecosystem) => Ecosystem;
 }
 
