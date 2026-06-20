@@ -411,6 +411,9 @@ export const resilienceActions: ResilienceAction[] = [
     title: "Add Gemini as backup model",
     detail: "Route OpenAI-dependent workflows through Gemini as failover.",
     difficulty: "Easy",
+    impact: "High",
+    scoreIncrease: 22,
+    rationale: "Halves single-vendor concentration on the most-used AI provider.",
     apply: (eco) => {
       let next = addNode(
         eco,
