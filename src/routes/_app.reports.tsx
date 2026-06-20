@@ -140,7 +140,7 @@ function ReportsPage() {
           The largest structural risk is provider concentration on{" "}
           <span className="text-foreground font-medium">{top?.provider ?? "OpenAI"}</span>, carrying {top?.pct ?? 0}% of cross-workflow exposure.
           Executing the top mitigations queued below projects the index to{" "}
-          <span className="text-foreground font-medium">{stackedSov.score}</span>.
+          <span className="text-foreground font-medium">{projectedScore}</span>.
         </p>
       </div>
 
