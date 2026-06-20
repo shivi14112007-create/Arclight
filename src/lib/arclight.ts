@@ -433,6 +433,9 @@ export const resilienceActions: ResilienceAction[] = [
     title: "Deploy local LLM",
     detail: "Self-hosted model for critical workflows; reduces vendor dependency.",
     difficulty: "High",
+    impact: "High",
+    scoreIncrease: 15,
+    rationale: "Removes external dependency for the two highest-criticality workflows.",
     apply: (eco) => {
       let next = addNode(
         eco,
