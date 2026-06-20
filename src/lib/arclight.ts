@@ -477,6 +477,9 @@ export const resilienceActions: ResilienceAction[] = [
     title: "Multi-region database replication",
     detail: "Postgres replicas across regions; failover under 90s.",
     difficulty: "Medium",
+    impact: "Medium",
+    scoreIncrease: 10,
+    rationale: "Adds redundancy to the primary datastore, cutting RPO/RTO.",
     apply: (eco) => {
       return addNode(
         eco,
